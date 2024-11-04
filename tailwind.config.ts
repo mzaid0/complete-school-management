@@ -9,11 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "hsl(39, 100%, 50%)", // Brighter and more saturated
+        primaryLight: "#f1ee8e", // Lighter shade
+        secondary: "#df70ff", // Brighter and more saturated
+        secondaryLight: "#ffc7ff", // Lighter shade
+        lamaSky: "hsl(200, 100%, 85%)", // Brighter and more saturated
+        lamaSkyLight: "hsl(200, 100%, 95%)", // Lighter shade
+      },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
